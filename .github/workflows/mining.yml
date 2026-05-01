@@ -17,7 +17,7 @@ jobs:
               uses: actions/setup-java@v4
               with:
                 java-version: '17'
-                distribuation: 'terminal'
+                distribution: temurin
 
             - name: build and panckage
               run: mvn clean package
