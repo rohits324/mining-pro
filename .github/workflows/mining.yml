@@ -1,0 +1,17 @@
+name: Mining pro application deployment
+
+on:
+    push:
+        branches: ["main"]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+
+            - name: checkout code
+              uses: actions/checkout@v4
+
+            - name: print
+              run: echo " working good"
