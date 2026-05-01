@@ -13,5 +13,13 @@ jobs:
             - name: checkout code
               uses: actions/checkout@v4
 
-            - name: print
-              run: echo " working good"
+            - name: steup java
+              uses: actions/stetup-java@v4
+              with:
+                java-version: '17'
+                distribuation: 'terminal'
+
+            - name: build and panckage
+              run: mvn clean package
+
+            
