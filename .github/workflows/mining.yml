@@ -13,8 +13,8 @@ jobs:
             - name: checkout code
               uses: actions/checkout@v4
 
-            - name: steup java
-              uses: actions/stetup-java@v4
+            - name: setup java
+              uses: actions/setup-java@v4
               with:
                 java-version: '17'
                 distribuation: 'terminal'
